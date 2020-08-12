@@ -26,6 +26,7 @@ const store = createStore(rootReducer, composeEnhancers(
 
 const app = (
     <Provider store={store}>
+        {/* you could set the base path if you intended to deploy from example.com/my-app */}
         <BrowserRouter>
             <App />
         </BrowserRouter>
